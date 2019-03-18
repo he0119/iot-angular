@@ -1,6 +1,18 @@
-# IOT
+# IOT-Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+This is a submodule of iot project.
+
+## Requirements
+
+* Node.js 10.14.1+
+
+## Setup
+
+```shell
+npm install -g @angular/cli
+npm install
+ng build --prod
+```
 
 ## Development server
 
