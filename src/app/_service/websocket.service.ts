@@ -7,13 +7,13 @@ import { DeviceData } from '../shared/documentation-items';
   providedIn: 'root'
 })
 export class WebsocketService {
-  private socket: SocketIOClient.Socket;
+  private socket: io.Socket;
 
   constructor() { }
   // Message to server
   send(type: string, msg: any) {
     this.socket.emit('website', {
-      type: type,
+      type,
       data: msg
     });
   }

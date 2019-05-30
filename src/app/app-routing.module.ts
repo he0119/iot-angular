@@ -8,10 +8,10 @@ import { AuthGuard } from './_helpers/auth.guard';
 const routes: Routes = [
   { path: '', redirectTo: 'status', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'status', loadChildren: './status/status.module#StatusModule', canActivate: [AuthGuard] },
-  { path: 'history', loadChildren: './history/history.module#HistoryModule', canActivate: [AuthGuard] },
-  { path: 'settings', loadChildren: './settings/settings.module#SettingsModule', canActivate: [AuthGuard] },
-  { path: 'login', loadChildren: './login/login.module#LoginModule' },
+  { path: 'status', loadChildren: () => import('./status/status.module').then(m => m.StatusModule), canActivate: [AuthGuard] },
+  { path: 'history', loadChildren: () => import('./history/history.module').then(m => m.HistoryModule), canActivate: [AuthGuard] },
+  { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule), canActivate: [AuthGuard] },
+  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
   { path: '**', component: NotfoundComponent },
 ];
 

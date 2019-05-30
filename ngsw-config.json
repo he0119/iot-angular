@@ -1,9 +1,9 @@
 {
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
-  "version": 1,
   "appData": {
-    "version": "0.6.0",
-    "description": "maybe the last version(moving to flutter)"
+    "version": "0.7.0",
+    "description": "Update angular 8"
   },
   "assetGroups": [
     {
@@ -23,7 +23,8 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
-          "/assets/**"
+          "/assets/**",
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
       }
     }
