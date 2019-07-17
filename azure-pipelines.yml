@@ -21,7 +21,9 @@ steps:
     path: $(Pipeline.Workspace)/.npm
   displayName: Cache npm
 
-- script: npm ci
+- script: |
+    npm install -g @angular/cli
+    npm ci
   displayName: 'Npm install'
 
 - script: ng build --configuration=dev --output-path=dev-dist
