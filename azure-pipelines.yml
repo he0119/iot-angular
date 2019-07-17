@@ -33,14 +33,18 @@ steps:
   displayName: 'Build dev'
 
 - script: ng build --prod --output-path=prod-dist
+  condition: contains(variables['Build.SourceBranch'], 'master')
   displayName: 'Build prod'
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/dev-dist'
     artifactName: dev
+  displayName: 'Publish dev'
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/prod-dist'
     artifactName: prod
+  condition: contains(variables['Build.SourceBranch'], 'master')
+  displayName: 'Publish prod'
