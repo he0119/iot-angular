@@ -15,16 +15,20 @@ steps:
     versionSpec: '>=10.9.0'
   displayName: 'Install Node.js'
 
-- script: |
-    npm install -g @angular/cli
-    npm install
-  displayName: 'npm install'
+- task: CacheBeta@0
+  inputs:
+    key: $(Build.SourcesDirectory)/package-lock.json
+    path: $(Pipeline.Workspace)/.npm
+  displayName: Cache npm
+
+- script: npm ci
+  displayName: 'Npm install'
 
 - script: ng build --configuration=dev --output-path=dev-dist
-  displayName: 'build dev'
+  displayName: 'Build dev'
 
 - script: ng build --prod --output-path=prod-dist
-  displayName: 'build prod'
+  displayName: 'Build prod'
 
 - task: PublishBuildArtifacts@1
   inputs:
