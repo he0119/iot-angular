@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: 'Ubuntu-16.04'
 
+variables:
+  npm_config_cache: $(Pipeline.Workspace)/.npm
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -18,7 +21,7 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: $(Build.SourcesDirectory)/package-lock.json
-    path: $(Pipeline.Workspace)/.npm
+    path: $(npm_config_cache)
   displayName: Cache npm
 
 - script: |
