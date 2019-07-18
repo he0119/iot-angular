@@ -9,29 +9,42 @@ trigger:
 pool:
   vmImage: 'Ubuntu-16.04'
 
+variables:
+  npm_config_cache: $(Pipeline.Workspace)/.npm
+
 steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '>=10.9.0'
   displayName: 'Install Node.js'
 
+- task: CacheBeta@0
+  inputs:
+    key: $(Build.SourcesDirectory)/package-lock.json
+    path: $(npm_config_cache)
+  displayName: Cache npm
+
 - script: |
     npm install -g @angular/cli
-    npm install
-  displayName: 'npm install'
+    npm ci
+  displayName: 'Npm install'
 
 - script: ng build --configuration=dev --output-path=dev-dist
-  displayName: 'build dev'
+  displayName: 'Build dev'
 
 - script: ng build --prod --output-path=prod-dist
-  displayName: 'build prod'
+  condition: contains(variables['Build.SourceBranch'], 'master')
+  displayName: 'Build prod'
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/dev-dist'
     artifactName: dev
+  displayName: 'Publish dev'
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/prod-dist'
     artifactName: prod
+  condition: contains(variables['Build.SourceBranch'], 'master')
+  displayName: 'Publish prod'
