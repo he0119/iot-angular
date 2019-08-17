@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
     // this.authorizationService.logout();
 
     // get return url from route parameters or default to '/'
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+    this.returnUrl = this.route.snapshot.queryParams.returnUrl || '/';
   }
 
   onSubmit() {

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2"
+  xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="textSettings" datatype="html">
+        <source>Settings</source>
+        <target>Settings</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c61e4862a0e3a9d0cf8f450b4d282841c43f4f8b" datatype="html">
+        <source>Welcome to hehome!</source>
+        <target>Welcome to hehome!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textON" datatype="html">
+        <source>ON</source>
+        <target>ON</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textOFF" datatype="html">
+        <source>OFF</source>
+        <target>OFF</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="55dd9f44e64851bca3b7bfc9283a5ff36f030228" datatype="html">
+        <source>Set</source>
+        <target>Set</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="69622feedf4fdc4b2808975e69cdf2c62da35f64" datatype="html">
+        <source>SHOW SETTINGS</source>
+        <target>SHOW SETTINGS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f925bf7f805675d83f80082cef9d34e7b908f374" datatype="html">
+        <source>HIDE SETTINGS</source>
+        <target>HIDE SETTINGS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3e24569eca61d598c8b01defbbbb1fa8bd5222bc" datatype="html">
+        <source>Devices</source>
+        <target>Devices</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8434d4a28744d7df82cd39ef8da4266fcbc40064" datatype="html">
+        <source>Start</source>
+        <target>Start</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b68ce78c3f2c548391d812c248217f8a212491e1" datatype="html">
+        <source>End</source>
+        <target>End</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7d49310535abb3792d8c9c991dd0d990d73d29af" datatype="html">
+        <source>Interval</source>
+        <target>Interval</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="70398fc868d12a8754cedd9b75eabcc2cbbed6bf" datatype="html">
+        <source>Draw Chart</source>
+        <target>Draw Chart</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f410cfde664cab67d552edcb121dc538dcf92d3d" datatype="html">
+        <source>Switch Language:</source>
+        <target>Switch Language:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings/settings/settings.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9057c6d19e7f42c70e03dc923cb04a159894014f" datatype="html">
+        <source>Please login to continue</source>
+        <target>Please login to continue</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login/login.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="08c74dc9762957593b91f6eb5d65efdfc975bf48" datatype="html">
+        <source>Username</source>
+        <target>Username</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login/login.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <target>Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login/login.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+        <source>Login</source>
+        <target>Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login/login.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

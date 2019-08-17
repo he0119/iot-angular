@@ -21,7 +21,7 @@ export class DeviceStatusComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeStatus(id, key, value) {
+  changeStatus(id: number, key: string, value: any) {
     this.statusService.setDeviceStatus(id, key, value).subscribe();
   }
 

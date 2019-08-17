@@ -2,22 +2,17 @@ import { Injectable } from '@angular/core';
 
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SwUpdate } from '@angular/service-worker';
-import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UpdateService {
-  constructor(private swUpdate: SwUpdate, private snackbar: MatSnackBar, private translate: TranslateService) {
+  constructor(private swUpdate: SwUpdate, private snackbar: MatSnackBar) {
     this.swUpdate.available.subscribe(event => {
-      let availableString;
-      let reloadString;
-      this.translate.get('update.available').subscribe((res: string) => {
-        availableString = res;
-      });
-      this.translate.get('update.reload').subscribe((res: string) => {
-        reloadString = res;
-      });
+      let availableString: string;
+      let reloadString: string;
+      availableString = 'Update Available';
+      reloadString = 'Reload';
 
       console.log('current version is', event.current);
       console.log('available version is', event.available);
