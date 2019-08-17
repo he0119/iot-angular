@@ -2,7 +2,7 @@
   <mat-card-header>
     <mat-card-title>{{device.displayName}}</mat-card-title>
     <mat-card-subtitle>
-      {{deviceData["time"]}}
+      {{deviceData["time"]| date:'medium'}}
     </mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>

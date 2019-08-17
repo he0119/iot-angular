@@ -25,6 +25,13 @@ import { RefreshTokenInterceptor } from './_helpers/refresh-token-interceptor';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
+// i18n
+import { registerLocaleData } from '@angular/common';
+import localeZh from '@angular/common/locales/zh';
+
+// the second parameter 'zh' is optional
+registerLocaleData(localeZh, 'zh');
+
 @NgModule({
   declarations: [
     AppComponent,
