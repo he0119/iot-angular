@@ -85,6 +85,12 @@
               ],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
+            },
+            "zh": {
+              "aot": true,
+              "i18nFile": "src/locale/messages.zh.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "zh"
             }
           }
         },
@@ -96,6 +102,9 @@
           "configurations": {
             "production": {
               "browserTarget": "iot:build:production"
+            },
+            "zh": {
+              "browserTarget": "iot:build:zh"
             }
           }
         },
