@@ -2,7 +2,7 @@
   <a mat-button routerLink="/" aria-label="IOT">
     <span class="header-text">IOT</span>
   </a>
-  <a mat-button class="navbar-hide-small" *ngFor="let key of sectionKeys" [routerLink]="key">{{sections[key]}}</a>
+  <a mat-button class="navbar-hide-small" *ngFor="let key of sectionKeys" [routerLink]="key" i18n>{sections[key], select, Home {Home} Status {Status} History {History}}</a>
   <div class="flex-spacer"></div>
   <a mat-button class="navbar-hide-small" href="https://github.com/he0119/iot" aria-label="GitHub Repository">
     <img class="github-logo" src="../../../assets/img/navbar/github-circle-white-transparent.svg" alt="iot">
