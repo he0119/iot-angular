@@ -150,7 +150,7 @@
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="08c74dc9762957593b91f6eb5d65efdfc975bf48" datatype="html">
+      <trans-unit id="textUsername" datatype="html">
         <source>Username</source>
         <target>用户名</target>
         <context-group purpose="location">
@@ -158,7 +158,7 @@
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+      <trans-unit id="textPassword" datatype="html">
         <source>Password</source>
         <target>密码</target>
         <context-group purpose="location">
@@ -166,7 +166,7 @@
           <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+      <trans-unit id="textLogin" datatype="html">
         <source>Login</source>
         <target>登陆</target>
         <context-group purpose="location">
