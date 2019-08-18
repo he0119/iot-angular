@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../flask/iot/angular-dist",
+            "outputPath": "./angular-dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -84,7 +84,10 @@
                 }
               ],
               "serviceWorker": true,
-              "ngswConfigPath": "ngsw-config.json"
+              "ngswConfigPath": "ngsw-config.json",
+              "i18nFile": "src/locale/messages.zh.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "zh"
             }
           }
         },
@@ -96,6 +99,9 @@
           "configurations": {
             "production": {
               "browserTarget": "iot:build:production"
+            },
+            "dev": {
+              "browserTarget": "iot:build:dev"
             }
           }
         },

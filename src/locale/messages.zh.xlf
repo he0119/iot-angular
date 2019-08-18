@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="34b30fc6a3a5cb550e97ae35483be4017fefc9c4" datatype="html">
+        <source>{VAR_SELECT, select, Home {Home} Status {Status} History {History} }</source>
+        <target>{VAR_SELECT, select, Home {主页} Status {状态} History {历史} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textSettings" datatype="html">
+        <source>Settings</source>
+        <target>设置</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="welcomeText" datatype="html">
+        <source>Welcome to hehome!</source>
+        <target>欢迎来到何家！</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textON" datatype="html">
+        <source>ON</source>
+        <target>开</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textOFF" datatype="html">
+        <source>OFF</source>
+        <target>关</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textSet" datatype="html">
+        <source>Set</source>
+        <target>设置</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textShowSettings" datatype="html">
+        <source>SHOW SETTINGS</source>
+        <target>显示设置</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textHideSettings" datatype="html">
+        <source>HIDE SETTINGS</source>
+        <target>隐藏设置</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/status/status/device-status/device-status.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textDevices" datatype="html">
+        <source>Devices</source>
+        <target>设备</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textStart" datatype="html">
+        <source>Start</source>
+        <target>开始</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textEnd" datatype="html">
+        <source>End</source>
+        <target>结束</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textInterval" datatype="html">
+        <source>Interval</source>
+        <target>间隔</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textDrawChart" datatype="html">
+        <source>Draw Chart</source>
+        <target>画图</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/history/history/history.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textSwitchLanguange" datatype="html">
+        <source>Switch Language</source>
+        <target>切换语言</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/settings/settings/settings.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginHeaderText" datatype="html">
+        <source>Please login to continue</source>
+        <target>请登陆以继续</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login/login.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textUsername" datatype="html">
+        <source>Username</source>
+        <target>用户名</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login/login.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textPassword" datatype="html">
+        <source>Password</source>
+        <target>密码</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login/login.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textLogin" datatype="html">
+        <source>Login</source>
+        <target>登陆</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login/login.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -14,12 +14,11 @@ export class RefreshTokenInterceptor implements HttpInterceptor {
     private router: Router,
   ) { }
 
-  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    return next.handle(req).pipe(
-      catchError((err) => {
-        const errorResponse = err as HttpErrorResponse;
-        if (errorResponse.url.includes('api/refresh')) {
-          if ((errorResponse.status === 401 && errorResponse.error.msg === 'Token has expired') || (errorResponse.status === 422)) {
+  intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    return next.handle(request).pipe(
+      catchError((err: HttpErrorResponse) => {
+        if (err.url.includes('api/refresh')) {
+          if ((err.status === 401 && err.error.msg === 'Token has expired')) {
             this.router.navigate(['/login'], {
               queryParams: {
                 returnUrl: document.location.pathname
@@ -28,11 +27,17 @@ export class RefreshTokenInterceptor implements HttpInterceptor {
           }
           return throwError(err);
         }
-        if ((errorResponse.status === 401 && errorResponse.error.msg === 'Token has expired') ||
-          (errorResponse.status === 422) && !errorResponse.url.includes('api/refresh')) {
-          return this.authorizationService.refresh().pipe(mergeMap(() => {
-            return this.tokenInterceptor.intercept(req, next);
-          }));
+
+        if (err.url.includes('api/login')) {
+          return next.handle(request);
+        }
+
+        if (err.status === 401) {
+          return this.authorizationService.refresh()
+            .pipe(
+              mergeMap(() => {
+                return this.tokenInterceptor.intercept(request, next);
+              }));
         }
       }));
   }
