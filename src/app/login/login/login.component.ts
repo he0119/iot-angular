@@ -43,14 +43,24 @@ export class LoginComponent implements OnInit {
     this.authorizationService.login(this.loginForm.value)
       .pipe(first())
       .subscribe(
-        data => {
+        () => {
           this.router.navigate([this.returnUrl]);
         },
         error => {
-          this.snackBar.open(error.error.message, 'OK', {
+          let message: string;
+          if (error.status === 401) {
+            message = 'Username or password is incorrect';
+          }
+          this.snackBar.open(message, 'OK', {
             duration: 2000,
           });
           this.loading = false;
         });
+  }
+
+  keyDownFunction(event: { keyCode: number; }) {
+    if (event.keyCode === 13) {
+      this.onSubmit();
+    }
   }
 }

@@ -28,6 +28,9 @@ export class RefreshTokenInterceptor implements HttpInterceptor {
           }
           return throwError(err);
         }
+        if (errorResponse.url.includes('api/login')) {
+          return next.handle(req);
+        }
         if ((errorResponse.status === 401 && errorResponse.error.msg === 'Token has expired') ||
           (errorResponse.status === 422) && !errorResponse.url.includes('api/refresh')) {
           return this.authorizationService.refresh().pipe(mergeMap(() => {
