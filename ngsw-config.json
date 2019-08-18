@@ -2,8 +2,8 @@
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
   "appData": {
-    "version": "0.7.0",
-    "description": "Update angular 8"
+    "version": "0.8.0",
+    "description": "Update angular 9"
   },
   "dataGroups": [
     {

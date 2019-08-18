@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="1.2"
-  xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="34b30fc6a3a5cb550e97ae35483be4017fefc9c4" datatype="html">
@@ -23,7 +22,7 @@
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="c61e4862a0e3a9d0cf8f450b4d282841c43f4f8b" datatype="html">
+      <trans-unit id="welcomeText" datatype="html">
         <source>Welcome to hehome!</source>
         <target>欢迎来到何家！</target>
         <context-group purpose="location">
@@ -71,7 +70,7 @@
           <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="55dd9f44e64851bca3b7bfc9283a5ff36f030228" datatype="html">
+      <trans-unit id="textSet" datatype="html">
         <source>Set</source>
         <target>设置</target>
         <context-group purpose="location">
@@ -79,7 +78,7 @@
           <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="69622feedf4fdc4b2808975e69cdf2c62da35f64" datatype="html">
+      <trans-unit id="textShowSettings" datatype="html">
         <source>SHOW SETTINGS</source>
         <target>显示设置</target>
         <context-group purpose="location">
@@ -87,7 +86,7 @@
           <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="f925bf7f805675d83f80082cef9d34e7b908f374" datatype="html">
+      <trans-unit id="textHideSettings" datatype="html">
         <source>HIDE SETTINGS</source>
         <target>隐藏设置</target>
         <context-group purpose="location">
@@ -95,7 +94,7 @@
           <context context-type="linenumber">71</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3e24569eca61d598c8b01defbbbb1fa8bd5222bc" datatype="html">
+      <trans-unit id="textDevices" datatype="html">
         <source>Devices</source>
         <target>设备</target>
         <context-group purpose="location">
@@ -103,7 +102,7 @@
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8434d4a28744d7df82cd39ef8da4266fcbc40064" datatype="html">
+      <trans-unit id="textStart" datatype="html">
         <source>Start</source>
         <target>开始</target>
         <context-group purpose="location">
@@ -111,7 +110,7 @@
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="b68ce78c3f2c548391d812c248217f8a212491e1" datatype="html">
+      <trans-unit id="textEnd" datatype="html">
         <source>End</source>
         <target>结束</target>
         <context-group purpose="location">
@@ -119,7 +118,7 @@
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7d49310535abb3792d8c9c991dd0d990d73d29af" datatype="html">
+      <trans-unit id="textInterval" datatype="html">
         <source>Interval</source>
         <target>间隔</target>
         <context-group purpose="location">
@@ -127,7 +126,7 @@
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="70398fc868d12a8754cedd9b75eabcc2cbbed6bf" datatype="html">
+      <trans-unit id="textDrawChart" datatype="html">
         <source>Draw Chart</source>
         <target>画图</target>
         <context-group purpose="location">
@@ -135,15 +134,15 @@
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="f410cfde664cab67d552edcb121dc538dcf92d3d" datatype="html">
-        <source>Switch Language:</source>
-        <target>切换语言:</target>
+      <trans-unit id="textSwitchLanguange" datatype="html">
+        <source>Switch Language</source>
+        <target>切换语言</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/settings/settings/settings.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9057c6d19e7f42c70e03dc923cb04a159894014f" datatype="html">
+      <trans-unit id="loginHeaderText" datatype="html">
         <source>Please login to continue</source>
         <target>请登陆以继续</target>
         <context-group purpose="location">

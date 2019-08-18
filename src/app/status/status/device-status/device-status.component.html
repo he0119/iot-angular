@@ -59,7 +59,7 @@
             </mat-expansion-panel-header>
             <mat-form-field class="form-field">
               <input matInput #inputBox>
-              <button mat-button matSuffix (click)="changeStatus(device.id, item.name, inputBox.value)" i18n>Set</button>
+              <button mat-button matSuffix (click)="changeStatus(device.id, item.name, inputBox.value)" i18n="@@textSet">Set</button>
             </mat-form-field>
           </mat-expansion-panel>
         </ng-container>
@@ -67,7 +67,7 @@
     </ng-container>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button *ngIf="!settingVisibility" (click)="showSettings()" i18n>SHOW SETTINGS</button>
-    <button mat-button *ngIf="settingVisibility" (click)="hideSettings()" i18n>HIDE SETTINGS</button>
+    <button mat-button *ngIf="!settingVisibility" (click)="showSettings()" i18n="@@textShowSettings">SHOW SETTINGS</button>
+    <button mat-button *ngIf="settingVisibility" (click)="hideSettings()" i18n="@@textHideSettings">HIDE SETTINGS</button>
   </mat-card-actions>
 </mat-card>

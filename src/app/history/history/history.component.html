@@ -1,27 +1,27 @@
 <div class="history-header" id="history-header">
   <mat-form-field>
-    <mat-select placeholder="Devices" i18n-placeholder [(ngModel)]="id">
+    <mat-select placeholder="Devices" i18n-placeholder="@@textDevices" [(ngModel)]="id">
       <mat-option *ngFor="let device of devices" [value]="device.id">
         {{device.displayName}}
       </mat-option>
     </mat-select>
   </mat-form-field>
   <mat-form-field>
-    <input matInput [matDatepicker]="dp1" placeholder="Start" i18n-placeholder [(ngModel)]='start'>
+    <input matInput [matDatepicker]="dp1" placeholder="Start" i18n-placeholder="@@textStart" [(ngModel)]='start'>
     <mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
     <mat-datepicker #dp1></mat-datepicker>
   </mat-form-field>
   <mat-form-field>
-    <input matInput [matDatepicker]="dp2" placeholder="End" i18n-placeholder [(ngModel)]='end'>
+    <input matInput [matDatepicker]="dp2" placeholder="End" i18n-placeholder="@@textEnd" [(ngModel)]='end'>
     <mat-datepicker-toggle matSuffix [for]="dp2"></mat-datepicker-toggle>
     <mat-datepicker #dp2></mat-datepicker>
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="Interval" i18n-placeholder [(ngModel)]='interval'>
+    <input matInput placeholder="Interval" i18n-placeholder="@@textInterval" [(ngModel)]='interval'>
   </mat-form-field>
   <mat-checkbox color="primary" [(ngModel)]="showSettings" i18n="@@textSettings">Settings</mat-checkbox>
   <div class="flex-spacer"></div>
-  <button mat-button (click)='onClick()' i18n>Draw Chart</button>
+  <button mat-button (click)='onClick()' i18n="@@textDrawChart">Draw Chart</button>
 </div>
 <div class="chart-container" [ngStyle]="{'width': chartWidth, 'height': chartHeight}">
   <canvas id="chart"></canvas>
