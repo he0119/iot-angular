@@ -1,9 +1,9 @@
 {
   "name": "iot",
-  "version": "0.8.0",
+  "version": "0.7.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -c zh --proxy-config proxyconfig.json",
+    "start": "ng serve --proxy-config proxyconfig.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
