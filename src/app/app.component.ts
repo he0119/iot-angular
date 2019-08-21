@@ -1,21 +1,10 @@
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { DateAdapter } from '@angular/material/core';
-import { UpdateService } from './_service/update.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-  constructor(private adapter: DateAdapter<any>) {
-  }
-
-  ngOnInit() {
-    /* --- set i18n begin ---*/
-
-    /* --- set i18n end ---*/
-  }
 }
