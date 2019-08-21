@@ -1,0 +1,39 @@
+{
+    // 使用 IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "compounds": [
+      {
+        "name": "Compound",
+        "configurations": [
+          "Angular",
+          "Flask"
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "name": "Angular",
+        "type": "chrome",
+        "request": "launch",
+        "preLaunchTask": "npm start",
+        "url": "http://localhost:4200/#",
+        "webRoot": "${workspaceFolder}",
+      },
+      {
+        "name": "Flask",
+        "type": "python",
+        "request": "launch",
+        "pythonPath": "${workspaceFolder}/../flask/venv/Scripts/python.exe",
+        "module": "flask",
+        "cwd": "${workspaceFolder}/../flask",
+        "env": {
+          "FLASK_APP": "run.py",
+        },
+        "args": [
+          "run",
+        ],
+      },
+    ]
+}
