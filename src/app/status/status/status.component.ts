@@ -27,7 +27,7 @@ export class StatusComponent implements OnInit, OnDestroy {
         };
       });
       // console.log(this.status);
-      this.connection = this.websocketService.onNewMessage().subscribe((msg: DeviceData) => {
+      this.connection = this.websocketService.onNewStatus().subscribe((msg: DeviceData) => {
         // console.log(msg);
         if (this.devicesData[msg.id]) {
           if (msg.time == null) {

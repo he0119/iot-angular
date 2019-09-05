@@ -12,7 +12,7 @@ export class DeviceService {
 
   constructor(private http: HttpClient) { }
 
-  deviceInfo(id) {
+  deviceInfo(id: string) {
     let key = 'device';
     key = key + id;
     const value: Device = JSON.parse(sessionStorage.getItem(key));

@@ -7,6 +7,11 @@ export const SECTIONS = {
   [HISTORY]: 'History',
 };
 
+export interface User {
+  username: string;
+  email: string;
+}
+
 export interface DeviceData {
   id: number;
   time: Date;

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, ReplaySubject } from 'rxjs';
+import { Observable, ReplaySubject, Subject } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
@@ -10,17 +10,31 @@ export class AuthorizationService {
   loginCheckUrl = 'api/login';
   refreshTokenUrl = 'api/refresh';
 
-  constructor(private httpClient: HttpClient, private snackbar: MatSnackBar) {
+  // Observable string sources
+  private missionAnnouncedSource = new Subject<string>();
+
+  // Observable string streams
+  missionAnnounced$ = this.missionAnnouncedSource.asObservable();
+
+  // Service message commands
+  announceMission(mission: string) {
+    this.missionAnnouncedSource.next(mission);
   }
+
+  constructor(
+    private http: HttpClient,
+    private snackbar: MatSnackBar
+  ) { }
 
   login(form: any): Observable<any> {
 
-    const postObservable = this.httpClient.post<any>(this.loginCheckUrl, form);
+    const postObservable = this.http.post<any>(this.loginCheckUrl, form);
 
     const subject = new ReplaySubject<any>(1);
     subject.subscribe((r: any) => {
       this.setAccessToken(r.access_token);
       this.setRefreshToken(r.refresh_token);
+      this.announceMission('update');
     }, (err) => {
       this.handleAuthenticationError(err);
     });
@@ -32,7 +46,7 @@ export class AuthorizationService {
   refresh(): Observable<any> {
     const headers = new HttpHeaders().set('Authorization', `Bearer ${this.getRefreshToken()}`);
 
-    const refreshObservable = this.httpClient.get<any>(this.refreshTokenUrl, { headers });
+    const refreshObservable = this.http.get<any>(this.refreshTokenUrl, { headers });
 
     const refreshSubject = new ReplaySubject<any>(1);
     refreshSubject.subscribe((r: any) => {
